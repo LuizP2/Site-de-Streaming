@@ -7,8 +7,7 @@ body {
 /* Header */
 .hero_area {
   height: calc(100vh - 30px);
-  background: -webkit-gradient(linear, left top, right top, color-stop(55%, #1a2e35), color-stop(55%, #1cbbb4));
-  background: linear-gradient(to right, #1a2e35 55%, #1cbbb4 55%);
+  background: linear-gradient(to right, #ffffff 55%, #ffffff 55%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +16,12 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  border: 5px solid rgb(253, 0, 253);
+  color: rgb(0, 0, 0);
+}
+
+.header_section {
+  background-color: #5E0B4D;
 }
 
 .header_section .user_option a {
@@ -45,6 +50,20 @@ a:focus {
   font-weight: bold;
   color: #ffffff;
   font-size: 24px;
+}
+
+.logo-name {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; 
+  animation-duration: 3s;
+}
+
+#btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 /* Carrossel */
@@ -93,6 +112,7 @@ a:focus {
   z-index: 999;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
+  top: 65%;
 }
 
 .slider_section .carousel_btn-container .carousel-control-prev,
@@ -106,21 +126,22 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 14px;
   background-position: center;
-  background-color: #1cbbb4;
+  background-color: #99187f;
   margin: 2px;
 }
 
 .slider_section .carousel_btn-container .carousel-control-prev:hover,
 .slider_section .carousel_btn-container .carousel-control-next:hover {
-  background-color: #1a918b;
+  background-color: #ffffff;
+  color: #5E0B4D;
+  border: solid 2px #5E0B4D;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
 }
 
-.slider_section .carousel_btn-container .carousel-control-prev {
-  background-image: url(../images/prev.png);
-}
-
-.slider_section .carousel_btn-container .carousel-control-next {
-  background-image: url(../images/next.png);
+.slider_section .carousel_btn-container .carousel-control-prev:hover, 
+.slider_section .carousel_btn-container .carousel-control-next:hover {
+  color: #5E0B4D;
 }
 
 .slider_section ol.carousel-indicators {
@@ -136,7 +157,7 @@ a:focus {
   text-indent: 0px;
   text-align: center;
   line-height: 55px;
-  color: #ffffff;
+  color: #1a2e35;
   background-color: transparent;
   opacity: 1;
   display: none;
