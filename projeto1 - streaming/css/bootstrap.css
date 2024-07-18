@@ -4210,6 +4210,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
+  display: flex;
+  justify-content: space-between;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   -ms-flex-positive: 1;
